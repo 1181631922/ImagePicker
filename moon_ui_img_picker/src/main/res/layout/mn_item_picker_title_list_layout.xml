@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="97dp"
+    android:layout_height="91.3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layoutPickerTitleItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="3dp">
+
+                <com.meili.moon.imagepicker.view.MNPickerView
+                    android:id="@+id/mnPickerTitleItem"
+                    android:layout_width="67dp"
+                    android:layout_height="50.3dp"
+                    android:layout_margin="2dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/mnPickerTitleRemove"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_above="@+id/layoutPickerTitleItem"
+                android:layout_marginBottom="-20dp"
+                android:layout_marginLeft="-25dp"
+                android:layout_toRightOf="@+id/layoutPickerTitleItem"
+                android:background="@drawable/mn_img_picker_remove"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mnPickerTitleItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#29292d"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+</RelativeLayout>
